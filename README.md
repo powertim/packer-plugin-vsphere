@@ -1,5 +1,7 @@
 # Packer Plugin for VMware vSphere
 
+This is a custom fork of Packer Plugin for VMware vSphere to test new features that are not yet available on the mainstream.
+
 The Packer Plugin for VMware vSphere is a multi-component plugin can be used with [HashiCorp Packer][packer] to create virtual machine images for [VMware vSphere][docs-vsphere].
 
 The plugin includes two builders which are able to create images, depending on your desired strategy:
@@ -42,7 +44,7 @@ packer {
   required_plugins {
     vsphere = {
       version = ">= 1.2.2"
-      source  = "github.com/hashicorp/vsphere"
+      source  = "github.com/powertim/vsphere"
     }
   }
 }
